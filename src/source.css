@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "general-regular";
+    src: url('../fonts/GeneralSans-Regular.woff'), 
+    url('../fonts/GeneralSans-Regular.woff2'), ;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "general-semibold";
+    src: url('../fonts/GeneralSans-Semibold.woff'), 
+    url('../fonts/GeneralSans-Semibold.woff2'), ;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "general-medium";
+    src: url('../fonts/GeneralSans-Medium.woff'), 
+    url('../fonts/GeneralSans-Medium.woff2'), ;
+    font-display: swap;
+}
+
+:root {
+    --light: 255, 255, 255;
+    --dark: 0, 0, 0;
+    --primary: 28, 66, 116;
+    --green: 170, 232, 88;
+    --position: 50%
+}
+@layer base {
+    body {
+        @apply font-generalRegular leading-loose overflow-x-hidden
+    }
+    img {
+        @apply block
+    }
+
+    h1, h2, h3,h4,h5 {
+        @apply font-generalSemiBold leading-snug text-balance
+    }
+
+    p {
+        @apply mb-5 text-balance text-sm
+    }
+
+    h1 {
+        @apply text-[clamp(30px,_7vw,_50px)]  mb-5 
+    }
+
+    h2 {
+        @apply text-[clamp(22px,_7vw,_40px)]  mb-5 
+    }
+
+    h3 {
+        @apply text-[clamp(16px,_7vw,_20px)] mb-3
+    }
+
+    input {
+        @apply p-2 rounded-sm border-none border border-white
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1300px] mx-auto px-4 w-full
+    } 
+
+    .btn {
+        @apply px-5 py-3 rounded-sm text-sm 
+    }
+    .info-box {
+        @apply text-light
+    }
+    .info-box:first-child,
+    .info-box:last-child {
+        @apply  after:w-[750px] after:absolute after:top-0 after:right-full after:bg-blue-500 after:h-[78px] after:hidden lg:after:block
+    }
+    .info-box:last-child {
+        @apply after:w-[750px] after:absolute after:top-0 after:left-full after:bg-blue-700 after:h-[78px]
+    }
+    
+    .acc-header.active i {
+        @apply rotate-45
+    }
+
+    .acc-header.active h4 {
+        @apply text-primary
+    }
+    .acc-body   {
+        @apply max-h-[0px] h-auto transition-all ease-linear overflow-hidden border-transparent duration-200
+    }
+
+    .acc-body.active  {
+        @apply max-h-[200px] border-primary
+    }
+}
+
+
+
+.tns-outer {
+    @apply relative w-[85vw]
+}
+
+.tns-ovh {
+    @apply  lg:w-[1200px]
+}
+
+
+.tns-controls {
+    @apply absolute top-1/2 -translate-y-1/2 z-20 -left-5
+}
+
+.tns-controls button[data-controls="next"] {
+    @apply hidden
+}
+
+
+.tns-controls button[data-controls="prev"] {
+    @apply   size-10 rounded-full border-primary border-2 bg-light grid place-content-center text-primary
+}
+
+.tns-nav {
+    @apply absolute z-20 top-full;
+}
+
+.tns-nav > button {
+    @apply bg-gray-400 size-2
+}
+
+.img-after {
+    clip-path: polygon(0 0, var(--position) 0, var(--position) 100%, 0% 100%);
+  
+}
+
+nav.active {
+    @apply left-0
+}
+
+
+nav ul li a {
+    @apply relative hover:text-primary
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: rgb(var(--primary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .2s ease-in-out, transform-origin 0s linear 0.5s;
+}
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
