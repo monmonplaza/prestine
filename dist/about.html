@@ -15,12 +15,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
   </head>
-  <body>
+  <body data-barba="wrapper">
+    <div
+      class="fixed top-0 left-0 w-full h-screen scale-y-0 bg-dark z-[99999]"
+      id="page-transition"
+    ></div>
     <header class="relative py-2 header">
       <div class="container">
         <div class="flex items-center justify-between">
           <div class="flex items-end gap-4">
-            <a href="#"
+            <a href="index.html"
               ><img
                 src="./img/logo.png"
                 class="md:w-[70px] w-[50px] md:h-[70px] h-[50px]"
@@ -36,13 +40,19 @@
               class="flex flex-col gap-10 text-center -translate-y-20 lg:translate-y-0 lg:flex-row lg:justify-end"
             >
               <li>
-                <a href="#" class="text-4xl font-bold lg:text-base">About</a>
+                <a href="about.html" class="text-4xl font-bold lg:text-base"
+                  >About</a
+                >
               </li>
               <li>
-                <a href="#" class="text-4xl font-bold lg:text-base">Client</a>
+                <a href="client.html" class="text-4xl font-bold lg:text-base"
+                  >Client</a
+                >
               </li>
               <li>
-                <a href="#" class="text-4xl font-bold lg:text-base">Contact</a>
+                <a href="contact.html" class="text-4xl font-bold lg:text-base"
+                  >Contact</a
+                >
               </li>
             </ul>
           </nav>
@@ -55,466 +65,469 @@
         </div>
       </div>
     </header>
-
-    <section
-      class="banner bg-[url('../img/banner-about.jpg')] bg-no-repeat bg-cover bg-center"
-    >
-      <div class="grid min-h-[calc(100dvh-66px)] place-content-center">
-        <div class="max-w-[860px] text-center -translate-y-[46px]">
-          <h1 class="text-[clamp(30px,_10vw,_70px)] text-primary">
-            Who We Are?
-          </h1>
-          <p class="text-lg">
-            At Pristine Provisions, our mission is to provide top-notch Airbnb
-            Services. We understand that hosts have specific needs for their
-            properties and need reliability, you can rest assured this is our
-            mission.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-14">
-      <div class="container">
-        <div class="grid items-center md:grid-cols-2 md:gap-14">
-          <div>
-            <small>Reliable</small>
-            <h2 class="text-primary">
-              Providing Exceptional Cleaning Services for Every Need
-            </h2>
-          </div>
-
-          <div>
-            <p>
-              At Pristine Provisions, we are committed to delivering top-notch
-              cleaning services that meet the unique needs of our clients. With
-              a team of skilled professionals and eco-friendly cleaning
-              products, we ensure a clean and healthy environment for your home
-              or business.
+    <main data-barba="container" data-barba-namespace="home">
+      <section
+        class="banner bg-[url('../img/banner-about.jpg')] bg-no-repeat bg-cover bg-center"
+      >
+        <div class="grid min-h-[calc(50dvh-66px)] place-content-center">
+          <div class="max-w-[860px] text-center -translate-y-[46px]">
+            <h1 class="text-[clamp(30px,_10vw,_70px)] text-primary">
+              Who We Are?
+            </h1>
+            <p class="text-lg">
+              At Pristine Provisions, our mission is to provide top-notch Airbnb
+              Services. We understand that hosts have specific needs for their
+              properties and need reliability, you can rest assured this is our
+              mission.
             </p>
-            <a href="#" class="btn bg-primary text-light">Learn More</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="py-14">
-      <div class="container">
-        <div class="grid items-center md:grid-cols-2 gap-14">
-          <img src="./img/why.webp" alt="" />
+      <section class="py-14">
+        <div class="container">
+          <div class="grid items-center md:grid-cols-2 md:gap-14">
+            <div>
+              <small>Reliable</small>
+              <h2 class="text-primary">
+                Providing Exceptional Cleaning Services for Every Need
+              </h2>
+            </div>
+
+            <div>
+              <p>
+                At Pristine Provisions, we are committed to delivering top-notch
+                cleaning services that meet the unique needs of our clients.
+                With a team of skilled professionals and eco-friendly cleaning
+                products, we ensure a clean and healthy environment for your
+                home or business.
+              </p>
+              <a href="#" class="btn bg-primary text-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-14">
+        <div class="container">
+          <div class="grid items-center md:grid-cols-2 gap-14">
+            <img src="./img/why.webp" alt="" />
+            <div>
+              <h2 class="text-primary">
+                Our Commitment to Exceptional Cleaning Services
+              </h2>
+              <p>
+                At Pristine Provisions, we are dedicated to providing top-notch
+                cleaning services that exceed customer expectations. With our
+                team of skilled professionals and eco-friendly cleaning
+                products, we strive to create a clean and healthy environment
+                for your home or business.
+              </p>
+
+              <a href="#" class="btn bg-primary text-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-14 mb-14">
+        <div class="container">
+          <div class="text-center">
+            <h3 class="mb-10">
+              Trusted by industry-leading companies for exceptional service
+              quality
+            </h3>
+
+            <div
+              class="flex flex-wrap justify-center max-w-[900px] gap-10 mx-auto"
+            >
+              <img src="./img/Logo-about.png" alt="" />
+              <img src="./img/Logo-about.png" alt="" />
+              <img src="./img/Logo-about.png" alt="" />
+              <img src="./img/Logo-about.png" alt="" />
+              <img src="./img/Logo-about.png" alt="" />
+              <img src="./img/Logo-about.png" alt="" />
+              <img src="./img/Logo-about.png" alt="" />
+              <img src="./img/Logo-about.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-20 overflow-x-hidden">
+        <div
+          class="grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-20 px-4 md:px-0 w-full ml-2 md:ml-6 lg:ml-[calc((100vw-1280px)/2)]"
+        >
           <div>
-            <h2 class="text-primary">
-              Our Commitment to Exceptional Cleaning Services
-            </h2>
+            <h2 class="text-primary">Customer <br />Testimonials</h2>
             <p>
-              At Pristine Provisions, we are dedicated to providing top-notch
-              cleaning services that exceed customer expectations. With our team
-              of skilled professionals and eco-friendly cleaning products, we
-              strive to create a clean and healthy environment for your home or
-              business.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus dolores quos sunt eligendi! Ducimus animi porro iure
+              omnis, veritatis quod!
             </p>
+          </div>
 
-            <a href="#" class="btn bg-primary text-light">Learn More</a>
+          <div class="testimonial-list">
+            <div class="testimonial-item w-full md:w-[400px]">
+              <div class="p-4 mx-1 border-2 border-primary">
+                <ul class="flex gap-2">
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                </ul>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, doloribus! Amet eum consequatur explicabo nesciunt
+                  aspernatur voluptate debitis voluptates earum a facere quasi,
+                  qui sapiente quod tenetur iusto culpa minima.
+                </p>
+
+                <div class="flex gap-5 mb-3">
+                  <img
+                    src="./img/avatar.jpg"
+                    alt=""
+                    class="rounded-full w-[40px] h-[40px] object-cover"
+                  />
+                  <div>
+                    <h5 class="leading-none">Name Suurname</h5>
+                    <small>Position, Company Name</small>
+                  </div>
+                </div>
+
+                <a href="#" class="text-sm font-bold hover:text-primary"
+                  >Read Case Study <i class="pl-2 fas fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="testimonial-item w-full md:w-[400px]">
+              <div class="p-4 mx-1 border-2 border-primary">
+                <ul class="flex gap-2">
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                </ul>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, doloribus! Amet eum consequatur explicabo nesciunt
+                  aspernatur voluptate debitis voluptates earum a facere quasi,
+                  qui sapiente quod tenetur iusto culpa minima.
+                </p>
+
+                <div class="flex gap-5 mb-3">
+                  <img
+                    src="./img/avatar.jpg"
+                    alt=""
+                    class="rounded-full w-[40px] h-[40px] object-cover"
+                  />
+                  <div>
+                    <h5 class="leading-none">Name Suurname</h5>
+                    <small>Position, Company Name</small>
+                  </div>
+                </div>
+
+                <a href="#" class="text-sm font-bold hover:text-primary"
+                  >Read Case Study <i class="pl-2 fas fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="testimonial-item w-full md:w-[400px]">
+              <div class="p-4 mx-1 border-2 border-primary">
+                <ul class="flex gap-2">
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                </ul>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, doloribus! Amet eum consequatur explicabo nesciunt
+                  aspernatur voluptate debitis voluptates earum a facere quasi,
+                  qui sapiente quod tenetur iusto culpa minima.
+                </p>
+
+                <div class="flex gap-5 mb-3">
+                  <img
+                    src="./img/avatar.jpg"
+                    alt=""
+                    class="rounded-full w-[40px] h-[40px] object-cover"
+                  />
+                  <div>
+                    <h5 class="leading-none">Name Suurname</h5>
+                    <small>Position, Company Name</small>
+                  </div>
+                </div>
+
+                <a href="#" class="text-sm font-bold hover:text-primary"
+                  >Read Case Study <i class="pl-2 fas fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="testimonial-item w-full md:w-[400px]">
+              <div class="p-4 mx-1 border-2 border-primary">
+                <ul class="flex gap-2">
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                </ul>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, doloribus! Amet eum consequatur explicabo nesciunt
+                  aspernatur voluptate debitis voluptates earum a facere quasi,
+                  qui sapiente quod tenetur iusto culpa minima.
+                </p>
+
+                <div class="flex gap-5 mb-3">
+                  <img
+                    src="./img/avatar.jpg"
+                    alt=""
+                    class="rounded-full w-[40px] h-[40px] object-cover"
+                  />
+                  <div>
+                    <h5 class="leading-none">Name Suurname</h5>
+                    <small>Position, Company Name</small>
+                  </div>
+                </div>
+
+                <a href="#" class="text-sm font-bold hover:text-primary"
+                  >Read Case Study <i class="pl-2 fas fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="testimonial-item w-full md:w-[400px]">
+              <div class="p-4 mx-1 border-2 border-primary">
+                <ul class="flex gap-2">
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+
+                  <li class="">
+                    <span class="text-yellow-400"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </li>
+                </ul>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti, doloribus! Amet eum consequatur explicabo nesciunt
+                  aspernatur voluptate debitis voluptates earum a facere quasi,
+                  qui sapiente quod tenetur iusto culpa minima.
+                </p>
+
+                <div class="flex gap-5 mb-3">
+                  <img
+                    src="./img/avatar.jpg"
+                    alt=""
+                    class="rounded-full w-[40px] h-[40px] object-cover"
+                  />
+                  <div>
+                    <h5 class="leading-none">Name Suurname</h5>
+                    <small>Position, Company Name</small>
+                  </div>
+                </div>
+
+                <a href="#" class="text-sm font-bold hover:text-primary"
+                  >Read Case Study <i class="pl-2 fas fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="py-14 mb-14">
-      <div class="container">
-        <div class="text-center">
-          <h3 class="mb-10">
-            Trusted by industry-leading companies for exceptional service
-            quality
-          </h3>
+      <footer class="bg-primary text-light">
+        <div class="container">
+          <div
+            class="grid lg:grid-cols-[500px_1fr_1.5fr_1fr] gap-4 md:gap-8 py-16 pb-20"
+          >
+            <div class="md:mr-10 md:pr-4">
+              <img
+                src="./img/logo-white.png"
+                alt=""
+                class="w-[80px] h-[80px] mb-5"
+              />
+              <p>
+                Join our newsletter to stay up to date on features and releases.
+              </p>
+
+              <form
+                action=""
+                class="flex flex-col items-center gap-2 mb-4 sm:flex-row"
+              >
+                <div class="w-full grow">
+                  <label for="">
+                    <input type="email" class="w-full outline-none text-dark" />
+                  </label>
+                </div>
+
+                <input
+                  type="submit"
+                  class="w-full px-4 py-2 rounded-sm bg-light text-dark md:w-[7rem]"
+                  value="Subscribe"
+                />
+              </form>
+
+              <p>
+                By subscribing you agree to with our Privacy Policy and provide
+                consent to receive updates from our company.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="mb-6 text-light">Quick Links</h5>
+              <ul class="space-y-4">
+                <li class="text-sm"><a href="#">About</a></li>
+                <li class="text-sm"><a href="#">Clients</a></li>
+                <li class="text-sm"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="mb-6 text-light">Contact Us</h5>
+              <ul class="space-y-4">
+                <li class="text-sm">
+                  <i class="fas fa-phone"></i
+                  ><span class="pl-3">+61 449 449 449</span>
+                </li>
+                <li class="text-sm">
+                  <i class="fas fa-clock"></i
+                  ><span class="pl-3">Mon - Fri, 7:00 - 4:00</span>
+                </li>
+                <li class="text-sm">
+                  <i class="fas fa-map-marker"></i
+                  ><span class="pl-3">rose@pristineprovisions.com.au</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="mb-6 text-light">Follow Us</h5>
+              <ul class="space-y-4">
+                <li class="text-sm">
+                  <a href="#"
+                    ><i class="fab fa-facebook"></i>
+                    <span class="pl-2">Facebook</span></a
+                  >
+                </li>
+                <li class="text-sm">
+                  <a href="#"
+                    ><i class="fab fa-instagram"></i>
+                    <span class="pl-2">Instagram</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div
-            class="flex flex-wrap justify-center max-w-[900px] gap-10 mx-auto"
+            class="items-center justify-between pt-10 pb-16 border-t md:flex border-light"
           >
-            <img src="./img/Logo-about.png" alt="" />
-            <img src="./img/Logo-about.png" alt="" />
-            <img src="./img/Logo-about.png" alt="" />
-            <img src="./img/Logo-about.png" alt="" />
-            <img src="./img/Logo-about.png" alt="" />
-            <img src="./img/Logo-about.png" alt="" />
-            <img src="./img/Logo-about.png" alt="" />
-            <img src="./img/Logo-about.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-20 overflow-x-hidden">
-      <div
-        class="grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-20 px-4 md:px-0 w-full ml-2 md:ml-6 lg:ml-[calc((100vw-1280px)/2)]"
-      >
-        <div>
-          <h2 class="text-primary">Customer <br />Testimonials</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-            dolores quos sunt eligendi! Ducimus animi porro iure omnis,
-            veritatis quod!
-          </p>
-        </div>
-
-        <div class="testimonial-list">
-          <div class="testimonial-item w-full md:w-[400px]">
-            <div class="p-4 mx-1 border-2 border-primary">
-              <ul class="flex gap-2">
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-              </ul>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, doloribus! Amet eum consequatur explicabo nesciunt
-                aspernatur voluptate debitis voluptates earum a facere quasi,
-                qui sapiente quod tenetur iusto culpa minima.
-              </p>
-
-              <div class="flex gap-5 mb-3">
-                <img
-                  src="./img/avatar.jpg"
-                  alt=""
-                  class="rounded-full w-[40px] h-[40px] object-cover"
-                />
-                <div>
-                  <h5 class="leading-none">Name Suurname</h5>
-                  <small>Position, Company Name</small>
-                </div>
-              </div>
-
-              <a href="#" class="text-sm font-bold hover:text-primary"
-                >Read Case Study <i class="pl-2 fas fa-angle-right"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="testimonial-item w-full md:w-[400px]">
-            <div class="p-4 mx-1 border-2 border-primary">
-              <ul class="flex gap-2">
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-              </ul>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, doloribus! Amet eum consequatur explicabo nesciunt
-                aspernatur voluptate debitis voluptates earum a facere quasi,
-                qui sapiente quod tenetur iusto culpa minima.
-              </p>
-
-              <div class="flex gap-5 mb-3">
-                <img
-                  src="./img/avatar.jpg"
-                  alt=""
-                  class="rounded-full w-[40px] h-[40px] object-cover"
-                />
-                <div>
-                  <h5 class="leading-none">Name Suurname</h5>
-                  <small>Position, Company Name</small>
-                </div>
-              </div>
-
-              <a href="#" class="text-sm font-bold hover:text-primary"
-                >Read Case Study <i class="pl-2 fas fa-angle-right"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="testimonial-item w-full md:w-[400px]">
-            <div class="p-4 mx-1 border-2 border-primary">
-              <ul class="flex gap-2">
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-              </ul>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, doloribus! Amet eum consequatur explicabo nesciunt
-                aspernatur voluptate debitis voluptates earum a facere quasi,
-                qui sapiente quod tenetur iusto culpa minima.
-              </p>
-
-              <div class="flex gap-5 mb-3">
-                <img
-                  src="./img/avatar.jpg"
-                  alt=""
-                  class="rounded-full w-[40px] h-[40px] object-cover"
-                />
-                <div>
-                  <h5 class="leading-none">Name Suurname</h5>
-                  <small>Position, Company Name</small>
-                </div>
-              </div>
-
-              <a href="#" class="text-sm font-bold hover:text-primary"
-                >Read Case Study <i class="pl-2 fas fa-angle-right"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="testimonial-item w-full md:w-[400px]">
-            <div class="p-4 mx-1 border-2 border-primary">
-              <ul class="flex gap-2">
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-              </ul>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, doloribus! Amet eum consequatur explicabo nesciunt
-                aspernatur voluptate debitis voluptates earum a facere quasi,
-                qui sapiente quod tenetur iusto culpa minima.
-              </p>
-
-              <div class="flex gap-5 mb-3">
-                <img
-                  src="./img/avatar.jpg"
-                  alt=""
-                  class="rounded-full w-[40px] h-[40px] object-cover"
-                />
-                <div>
-                  <h5 class="leading-none">Name Suurname</h5>
-                  <small>Position, Company Name</small>
-                </div>
-              </div>
-
-              <a href="#" class="text-sm font-bold hover:text-primary"
-                >Read Case Study <i class="pl-2 fas fa-angle-right"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="testimonial-item w-full md:w-[400px]">
-            <div class="p-4 mx-1 border-2 border-primary">
-              <ul class="flex gap-2">
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-
-                <li class="">
-                  <span class="text-yellow-400"
-                    ><i class="fas fa-star"></i
-                  ></span>
-                </li>
-              </ul>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, doloribus! Amet eum consequatur explicabo nesciunt
-                aspernatur voluptate debitis voluptates earum a facere quasi,
-                qui sapiente quod tenetur iusto culpa minima.
-              </p>
-
-              <div class="flex gap-5 mb-3">
-                <img
-                  src="./img/avatar.jpg"
-                  alt=""
-                  class="rounded-full w-[40px] h-[40px] object-cover"
-                />
-                <div>
-                  <h5 class="leading-none">Name Suurname</h5>
-                  <small>Position, Company Name</small>
-                </div>
-              </div>
-
-              <a href="#" class="text-sm font-bold hover:text-primary"
-                >Read Case Study <i class="pl-2 fas fa-angle-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-primary text-light">
-      <div class="container">
-        <div
-          class="grid lg:grid-cols-[500px_1fr_1.5fr_1fr] gap-4 md:gap-8 py-16 pb-20"
-        >
-          <div class="md:mr-10 md:pr-4">
-            <img
-              src="./img/logo-white.png"
-              alt=""
-              class="w-[80px] h-[80px] mb-5"
-            />
-            <p>
-              Join our newsletter to stay up to date on features and releases.
-            </p>
-
-            <form
-              action=""
-              class="flex flex-col items-center gap-2 mb-4 sm:flex-row"
-            >
-              <div class="w-full input-wrap grow">
-                <label for="">
-                  <input type="email" class="w-full outline-none text-dark" />
-                </label>
-              </div>
-
-              <input
-                type="submit"
-                class="w-full px-4 py-2 rounded-sm bg-light text-dark md:w-[7rem]"
-                value="Subscribe"
-              />
-            </form>
-
-            <p>
-              By subscribing you agree to with our Privacy Policy and provide
-              consent to receive updates from our company.
-            </p>
-          </div>
-
-          <div>
-            <h5 class="mb-6 text-light">Quick Links</h5>
-            <ul class="space-y-4">
-              <li class="text-sm"><a href="#">About</a></li>
-              <li class="text-sm"><a href="#">Clients</a></li>
-              <li class="text-sm"><a href="#">Contact</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h5 class="mb-6 text-light">Contact Us</h5>
-            <ul class="space-y-4">
-              <li class="text-sm">
-                <i class="fas fa-phone"></i
-                ><span class="pl-3">+61 449 449 449</span>
-              </li>
-              <li class="text-sm">
-                <i class="fas fa-clock"></i
-                ><span class="pl-3">Mon - Fri, 7:00 - 4:00</span>
-              </li>
-              <li class="text-sm">
-                <i class="fas fa-map-marker"></i
-                ><span class="pl-3">rose@pristineprovisions.com.au</span>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h5 class="mb-6 text-light">Follow Us</h5>
-            <ul class="space-y-4">
-              <li class="text-sm">
-                <a href="#"
-                  ><i class="fab fa-facebook"></i>
-                  <span class="pl-2">Facebook</span></a
-                >
-              </li>
-              <li class="text-sm">
-                <a href="#"
-                  ><i class="fab fa-instagram"></i>
-                  <span class="pl-2">Instagram</span></a
-                >
-              </li>
+            <small>© 2024 Pristine Provisions. All rights reserved.</small>
+            <ul class="flex gap-2 md:gap-5">
+              <li class="text-sm"><a href="#">Privacy Policy</a></li>
+              <li class="text-sm"><a href="#">Terms of Service</a></li>
+              <li class="text-sm"><a href="#">Cookies Settings</a></li>
             </ul>
           </div>
         </div>
-
-        <div
-          class="items-center justify-between pt-10 pb-16 border-t md:flex border-light"
-        >
-          <small>© 2024 Pristine Provisions. All rights reserved.</small>
-          <ul class="flex gap-2 md:gap-5">
-            <li class="text-sm"><a href="#">Privacy Policy</a></li>
-            <li class="text-sm"><a href="#">Terms of Service</a></li>
-            <li class="text-sm"><a href="#">Cookies Settings</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
+      </footer>
+    </main>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
+    <script src="./js/script.js"></script>
     <script>
       var slider = tns({
         container: ".testimonial-list",
@@ -522,8 +535,7 @@
         slideBy: "page",
         autoplay: false,
         gutter: 50,
-        controlsText: ["<i class='fas fa-angle-right'></i>", ""],
-        autoplayDirection: "backward",
+        controlsText: ["<i class='fas fa-angle-left'></i>", ""],
         nav: false,
         startIndex: -1,
         mouseDrag: true,

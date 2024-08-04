@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
+    "
+    />
+  </head>
+  <body data-barba="wrapper">
+    <div
+      class="fixed top-0 left-0 w-full h-screen scale-y-0 bg-dark z-[99999]"
+      id="page-transition"
+    ></div>
+    <header class="relative py-2 header">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <div class="flex items-end gap-4">
+            <a href="index.html"
+              ><img
+                src="./img/logo.png"
+                class="md:w-[70px] w-[50px] md:h-[70px] h-[50px]"
+            /></a>
+            <p class="hidden mb-0 text-lg font-bold uppercase text-primary">
+              Prestine Provisions
+            </p>
+          </div>
+          <nav
+            class="fixed top-0 -left-full w-full h-[100dvh] z-[50] bg-light grid lg:block place-items-center lg:static lg:h-auto transition-all"
+          >
+            <ul
+              class="flex flex-col gap-10 text-center -translate-y-20 lg:translate-y-0 lg:flex-row lg:justify-end"
+            >
+              <li>
+                <a href="about.html" class="text-4xl font-bold lg:text-base"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="client.html" class="text-4xl font-bold lg:text-base"
+                  >Client</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-4xl font-bold lg:text-base"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="absolute z-[99999] text-3xl top-5 right-6 lg:hidden"
+            id="toggle__menu"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main data-barba="container" data-barba-namespace="contact">
+      <section
+        class="banner bg-[url('../img/banner-about.jpg')] bg-no-repeat bg-cover bg-center"
+      >
+        <div class="grid min-h-[calc(50dvh-66px)] place-content-center">
+          <div class="max-w-[860px] text-center -translate-y-[46px]">
+            <h1 class="text-[clamp(30px,_10vw,_70px)] text-primary">
+              Contact Us
+            </h1>
+            <p class="text-lg">
+              At Pristine Provisions, our mission is to provide top-notch Airbnb
+              Services. We understand that hosts have specific needs for their
+              properties and need reliability, you can rest assured this is our
+              mission.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24">
+        <div class="container">
+          <div class="grid grid-cols-2 gap-10 max-w-[1000px] mx-auto">
+            <div class="content">
+              <h3>Get In Touch</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                iusto a provident itaque blanditiis asperiores modi delectus
+                ducimus laboriosam quae.
+              </p>
+              <div class="grid grid-cols-1 gap-5">
+                <div class="flex items-center gap-2">
+                  <i class="text-lg fa-regular fa-clock"></i>
+                  <p class="mb-0">Mon-Fri 7:00 - 4:00</p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <i class="text-lg fa-regular fa-envelope"></i>
+                  <p class="mb-0">rose@pristineprovision.com.au</p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <i class="text-lg fa-regular fa-map"></i>
+                  <p class="mb-0">22 Street, Makati city</p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <i class="text-lg fa-solid fa-mobile-screen"></i>
+                  <p class="mb-0">+32 222 1234 232</p>
+                </div>
+              </div>
+            </div>
+            <div class="form">
+              <form action="">
+                <div class="input-wrap">
+                  <label for="">Name</label>
+                  <input type="text" />
+                </div>
+
+                <div class="input-wrap">
+                  <label for="">Email</label>
+                  <input type="text" />
+                </div>
+
+                <div class="input-wrap">
+                  <label for="">Subject</label>
+                  <input type="text" />
+                </div>
+
+                <div class="input-wrap">
+                  <label for="">Message</label>
+                  <textarea name="" id=""></textarea>
+                </div>
+
+                <input
+                  type="submit"
+                  value="Send"
+                  class="btn bg-primary text-light"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-primary text-light">
+        <div class="container">
+          <div
+            class="grid lg:grid-cols-[500px_1fr_1.5fr_1fr] gap-4 md:gap-8 py-16 pb-20"
+          >
+            <div class="md:mr-10 md:pr-4">
+              <img
+                src="./img/logo-white.png"
+                alt=""
+                class="w-[80px] h-[80px] mb-5"
+              />
+              <p>
+                Join our newsletter to stay up to date on features and releases.
+              </p>
+
+              <form
+                action=""
+                class="flex flex-col items-center gap-2 mb-4 sm:flex-row"
+              >
+                <div class="w-full grow">
+                  <label for="">
+                    <input type="email" class="w-full outline-none text-dark" />
+                  </label>
+                </div>
+
+                <input
+                  type="submit"
+                  class="w-full px-4 py-2 rounded-sm bg-light text-dark md:w-[7rem]"
+                  value="Subscribe"
+                />
+              </form>
+
+              <p>
+                By subscribing you agree to with our Privacy Policy and provide
+                consent to receive updates from our company.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="mb-6 text-light">Quick Links</h5>
+              <ul class="space-y-4">
+                <li class="text-sm"><a href="#">About</a></li>
+                <li class="text-sm"><a href="#">Clients</a></li>
+                <li class="text-sm"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="mb-6 text-light">Contact Us</h5>
+              <ul class="space-y-4">
+                <li class="text-sm">
+                  <i class="fas fa-phone"></i
+                  ><span class="pl-3">+61 449 449 449</span>
+                </li>
+                <li class="text-sm">
+                  <i class="fas fa-clock"></i
+                  ><span class="pl-3">Mon - Fri, 7:00 - 4:00</span>
+                </li>
+                <li class="text-sm">
+                  <i class="fas fa-map-marker"></i
+                  ><span class="pl-3">rose@pristineprovisions.com.au</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="mb-6 text-light">Follow Us</h5>
+              <ul class="space-y-4">
+                <li class="text-sm">
+                  <a href="#"
+                    ><i class="fab fa-facebook"></i>
+                    <span class="pl-2">Facebook</span></a
+                  >
+                </li>
+                <li class="text-sm">
+                  <a href="#"
+                    ><i class="fab fa-instagram"></i>
+                    <span class="pl-2">Instagram</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="items-center justify-between pt-10 pb-16 border-t md:flex border-light"
+          >
+            <small>© 2024 Pristine Provisions. All rights reserved.</small>
+            <ul class="flex items-center gap-2 md:gap-5">
+              <li class="text-sm"><a href="#">Privacy Policy</a></li>
+              <li class="text-sm"><a href="#">Terms of Service</a></li>
+              <li class="text-sm"><a href="#">Cookies Settings</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

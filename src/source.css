@@ -55,11 +55,11 @@
     }
 
     h3 {
-        @apply text-[clamp(16px,_7vw,_20px)] mb-3
+        @apply text-[clamp(16px,_7vw,_25px)] mb-3
     }
 
     input {
-        @apply p-2 rounded-sm border-none border border-white
+        @apply p-2 rounded-sm 
     }
 }
 
@@ -95,6 +95,21 @@
 
     .acc-body.active  {
         @apply max-h-[200px] border-primary
+    }
+    .input-wrap {
+        @apply mb-3
+    }
+    .input-wrap label{
+        @apply block text-sm
+    }
+
+    .input-wrap input,
+    .input-wrap textarea {
+        @apply block border border-gray-300 outline-none  w-full rounded-sm p-2
+    }
+
+    .input-wrap textarea {
+        @apply resize-none w-full min-h-[200px] p-2
     }
 }
 
